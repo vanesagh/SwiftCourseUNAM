@@ -35,7 +35,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="✋🏿"/>
                                         <connections>
-                                            <action selector="papelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KNc-7n-QBF"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzH-Mh-Doh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-v4-HoV">
@@ -43,7 +43,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="✌🏽"/>
                                         <connections>
-                                            <action selector="tijeraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyH-ro-ABv"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RN3-ua-P7l"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-CV-qf2">
@@ -51,14 +51,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="👊🏽"/>
                                         <connections>
-                                            <action selector="piedraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFi-mF-gcw"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tPz-1c-qQz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnU-p4-2sC">
                                         <rect key="frame" x="26" y="312.5" width="121" height="30"/>
                                         <state key="normal" title="¿Jugar de nuevo?"/>
                                         <connections>
-                                            <action selector="jugarDenuevoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TX-ln-DCY"/>
+                                            <action selector="actionrestartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKh-0h-c8A"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -72,7 +72,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="displayLabel" destination="8bC-Xf-vdC" id="7Sq-gu-uJi"/>
+                        <outlet property="cutButton" destination="ns7-v4-HoV" id="6oK-Kq-XXY"/>
+                        <outlet property="displayLabel" destination="6Qh-6u-ZaV" id="hWT-5G-Ys2"/>
+                        <outlet property="jugarDeNuevoButton" destination="BnU-p4-2sC" id="91f-zL-bBA"/>
+                        <outlet property="martianLabel" destination="sdy-iK-gMs" id="RXS-aX-Q7B"/>
+                        <outlet property="paperButton" destination="8XE-1D-srL" id="q1f-I1-3OI"/>
+                        <outlet property="rockButton" destination="dK3-CV-qf2" id="OV5-AP-BOh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
